@@ -1,6 +1,15 @@
-{{#each this}}
-  <li>
-    <p>Name: {{name}}</p>
-    <p>Username: {{username}}</p>
-  </li>
-{{/each}}
+<li>
+  <h2 class="title">{{name}}</h2>
+  <p class="text">Capitals:
+    {{#each capitals}}
+      {{this.name}}
+    {{/each}}</p>
+
+  <p class="text">Population: {{population}}</p>
+  <p class="text"><p class="text">Languages:
+      {{#each languages}}
+        {{this.name}}
+      {{/each}}</p></p>
+
+  <img src="{{img}}" alt="" width="350" />
+</li>
